@@ -19,10 +19,10 @@ import net.continuumsecurity.proxy.ZAProxyScanner;
 public class ZapSecurityTest {
 	static Logger log = Logger.getLogger(ZapSecurityTest.class.getName());
 	private static final String ZAP_PROXYHOST = "localhost";
-	private static final int ZAP_PROXYPORT = 8080;
+	private static final int ZAP_PROXYPORT = 8089;
 	private static final String ZAP_APIKEY = null;
 	
-	private static final String BROWSER_DRIVER_PATH = "D:\\Research\\SecurityTesting\\WebProject_master\\WebProject\\drivers\\chromedriver.exe";
+	private static final String BROWSER_DRIVER_PATH = System.getProperty("user.dir") + "\\drivers\\chromedriver.exe";
 	private final static String MEDIUM = "MEDIUM";
 	private final static String HIGH = "HIGH";
 	private ScanningProxy zapScanner;
@@ -50,6 +50,9 @@ public class ZapSecurityTest {
 	// configure ZAP Scanner, API client and perform User Registration
 	@Before
 	public void Setup(){
+		
+		log.info("---------------------------browser driver path " + BROWSER_DRIVER_PATH);
+		
 		//configure ZAP Scanner
 		zapScanner = new ZAProxyScanner(ZAP_PROXYHOST, ZAP_PROXYPORT, ZAP_APIKEY);
 		
