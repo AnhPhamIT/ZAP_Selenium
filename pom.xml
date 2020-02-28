@@ -1,0 +1,136 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>testdemo</groupId>
+	<artifactId>testdemo</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<dependencies>
+		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>4.0.0-alpha-1</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/io.appium/java-client -->
+		<dependency>
+			<groupId>io.appium</groupId>
+			<artifactId>java-client</artifactId>
+			<version>7.0.0</version>
+		</dependency>
+
+
+<!-- https://mvnrepository.com/artifact/junit/junit -->
+<dependency>
+    <groupId>junit</groupId>
+    <artifactId>junit</artifactId>
+    <version>4.12</version>
+    <scope>test</scope>
+</dependency>
+
+
+		<!-- https://mvnrepository.com/artifact/net.sourceforge.jexcelapi/jxl -->
+		<dependency>
+			<groupId>net.sourceforge.jexcelapi</groupId>
+			<artifactId>jxl</artifactId>
+			<version>2.6.12</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-surefire-report-plugin -->
+		<dependency>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-surefire-report-plugin</artifactId>
+			<version>2.22.1</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-core</artifactId>
+			<version>2.11.1</version>
+		</dependency>
+		<dependency>
+            <groupId>net.continuumsecurity</groupId>
+            <artifactId>zap-java-api</artifactId>
+            <version>2.4.2</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/libs/proxy-2.4.2-SNAPSHOT.jar</systemPath>
+        </dependency>   
+<dependency>
+            <groupId>org.owasp</groupId>
+            <artifactId>zaproxy-client-api</artifactId>
+            <version>2.4-6</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/libs/zap-api-2.4-v6.jar</systemPath>
+        </dependency>
+<dependency>
+            <groupId>edu.umass.cs.benchlab</groupId>
+            <artifactId>harlib</artifactId>
+            <version>1.1.1</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/libs/harlib-1.1.1.jar</systemPath>
+        </dependency>
+	</dependencies>
+
+	<profiles>
+		<profile>
+			<id>selenium-tests</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-compiler-plugin</artifactId>
+						<configuration>
+							<source>1.7</source>
+							<target>1.7</target>
+							<encoding>UTF-8</encoding>
+							<compilerArgument>-Xlint:unchecked</compilerArgument>
+						</configuration>
+						<version>3.5.1</version>
+					</plugin>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-surefire-plugin</artifactId>
+						<version>2.22.1</version>
+						<configuration>
+							<systemPropertyVariables>
+								<browser>${browserType}</browser>
+								<version>${version}</version>
+								<remote>${remote}</remote>
+								<dataFile>${excelFile}</dataFile>
+								<dataSheet>${sheet}</dataSheet>
+								<APIFile>${APIFile}</APIFile>
+								<APISheet>${APISheet}</APISheet>
+								<seleniumHub>${seleniumHub}</seleniumHub>
+								<threadCnt>${threads}</threadCnt>
+								<IsCucumber>False</IsCucumber>
+								<desiredBrowserVersion>${browserVersion}</desiredBrowserVersion>
+								<reportDir>${project.basedir}/report/${suite}/${browser}_${maven.build.timestamp}</reportDir>
+								<webdriver.chrome.driver>${project.basedir}/selenium_driver/chromedriver.exe</webdriver.chrome.driver>
+								<webdriver.gecko.driver>${project.basedir}/selenium_driver/geckodriver.exe</webdriver.gecko.driver>
+								<webdriver.edge.driver>${project.basedir}/selenium_driver/MicrosoftWebDriver.exe</webdriver.edge.driver>
+								<video.folder>${project.basedir}/report/${suite}/${browser}_${maven.build.timestamp}/video</video.folder>
+							</systemPropertyVariables>
+							
+						</configuration>
+						<executions>
+							<!-- <execution> <id>integration-test</id> <phase>integration-test</phase> 
+								<goals> <goal>integration-test</goal> </goals> </execution> -->
+							<execution>
+								<id>test</id>
+								<phase>test</phase>
+								<goals>
+									<goal>test</goal>
+								</goals>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
+</project>

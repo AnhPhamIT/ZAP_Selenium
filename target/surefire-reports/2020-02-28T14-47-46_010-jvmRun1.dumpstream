@@ -1,0 +1,20 @@
+# Created at 2020-02-28T15:15:50.072
+Unexpected IOException with stream: 2020-02-28 15:15:50 INFO  ZapSecurityTest:227 - [     ] Scan is 38% complete.
+
+
+# Created at 2020-02-28T15:15:51.074
+Unexpected IOException with stream: 2020-02-28 15:15:51 INFO  ZapSecurityTest:227 - [     ] Scan is 38% complete.
+
+
+# Created at 2020-02-28T15:15:52.076
+Unexpected IOException with stream: 2020-02-28 15:15:52 INFO  ZapSecurityTest:227 - [     ] Scan is 38% complete.
+
+
+# Created at 2020-02-28T15:15:53.081
+Unexpected IOException: 7,1,ZAP_Selenium.ZapSecurityTest,testVulnerabilitiesLogin(ZAP_Selenium.ZapSecurityTest),null,null,null,null,ZapSecurityTest.testVulnerabilitiesLogin:262->scanWithZap:226 \00BB NullPointer,java.lang.NullPointerException\000A\0009at ZAP_Selenium.ZapSecurityTest.scanWithZap(ZapSecurityTest.java:226)\000A\0009at ZAP_Selenium.ZapSecurityTest.testVulnerabilitiesLogin(ZapSecurityTest.java:262)\000A
+
+
+# Created at 2020-02-28T15:15:53.083
+Unexpected IOException: 2,1,org.apache.maven.surefire.junit4.JUnit4Provider,ZAP_Selenium.ZapSecurityTest,null,null,null
+
+

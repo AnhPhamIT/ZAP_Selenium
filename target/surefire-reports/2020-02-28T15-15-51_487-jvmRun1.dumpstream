@@ -1,0 +1,434 @@
+# Created at 2020-02-28T15:16:37.427
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: DEFAULT
+java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:391)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+# Created at 2020-02-28T15:16:38.425
+Unexpected IOException with stream: 2020-02-28 15:16:38 INFO  ZapSecurityTest:199 - [     ] Spider is 5% complete.
+
+
+# Created at 2020-02-28T15:16:39.428
+Unexpected IOException with stream: 2020-02-28 15:16:39 INFO  ZapSecurityTest:199 - [     ] Spider is 6% complete.
+
+
+# Created at 2020-02-28T15:16:40.713
+Unexpected IOException with stream: 2020-02-28 15:16:40 INFO  ZapSecurityTest:199 - [     ] Spider is 7% complete.
+
+
+# Created at 2020-02-28T15:16:41.718
+Unexpected IOException with stream: 2020-02-28 15:16:41 INFO  ZapSecurityTest:199 - [     ] Spider is 10% complete.
+
+
+# Created at 2020-02-28T15:16:42.722
+Unexpected IOException with stream: 2020-02-28 15:16:42 INFO  ZapSecurityTest:199 - [     ] Spider is 13% complete.
+
+
+# Created at 2020-02-28T15:16:43.725
+Unexpected IOException with stream: 2020-02-28 15:16:43 INFO  ZapSecurityTest:199 - [     ] Spider is 15% complete.
+
+
+# Created at 2020-02-28T15:16:44.737
+Unexpected IOException with stream: 2020-02-28 15:16:44 INFO  ZapSecurityTest:199 - [     ] Spider is 15% complete.
+
+
+# Created at 2020-02-28T15:16:45.748
+Unexpected IOException with stream: 2020-02-28 15:16:45 INFO  ZapSecurityTest:199 - [     ] Spider is 15% complete.
+
+
+# Created at 2020-02-28T15:16:47.752
+Unexpected IOException with stream: org.zaproxy.clientapi.core.ClientApiException: java.net.ConnectException: Connection refused: connect
+
+# Created at 2020-02-28T15:16:47.753
+Unexpected IOException with stream: 
+
+
+# Created at 2020-02-28T15:16:47.754
+Unexpected IOException with stream: 	at org.zaproxy.clientapi.core.ClientApi.callApiDom(Unknown Source)
+
+# Created at 2020-02-28T15:16:47.755
+Unexpected IOException with stream: 
+
+
+# Created at 2020-02-28T15:16:47.756
+Unexpected IOException with stream: 	at org.zaproxy.clientapi.core.ClientApi.callApi(Unknown Source)
+
+# Created at 2020-02-28T15:16:47.757
+Unexpected IOException with stream: 
+
+
+# Created at 2020-02-28T15:16:47.757
+Unexpected IOException with stream: 	at org.zaproxy.clientapi.gen.Spider.scans(Unknown Source)
+
+# Created at 2020-02-28T15:16:47.757
+Unexpected IOException with stream: 
+
+
+# Created at 2020-02-28T15:16:47.758
+Unexpected IOException with stream: 	at net.continuumsecurity.proxy.ZAProxyScanner.getSpiderProgress(ZAProxyScanner.java:409)
+
+# Created at 2020-02-28T15:16:47.758
+Unexpected IOException with stream: 
+
+
+# Created at 2020-02-28T15:16:47.759
+Unexpected IOException with stream: 	at ZAP_Selenium.ZapSecurityTest.spiderWithZap(ZapSecurityTest.java:198)
+
+# Created at 2020-02-28T15:16:47.759
+Unexpected IOException with stream: 
+
+
+# Created at 2020-02-28T15:16:47.759
+Unexpected IOException with stream: 	at ZAP_Selenium.ZapSecurityTest.testVulnerabilitiesLogin(ZapSecurityTest.java:255)
+
+# Created at 2020-02-28T15:16:47.760
+Unexpected IOException with stream: 
+
+
+# Created at 2020-02-28T15:16:47.760
+Unexpected IOException with stream: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+
+# Created at 2020-02-28T15:16:47.761
+Unexpected IOException with stream: 
+
+
+# Created at 2020-02-28T15:16:47.761
+Unexpected IOException with stream: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+
+# Created at 2020-02-28T15:16:47.761
+Unexpected IOException with stream: 
+
+
+# Created at 2020-02-28T15:16:47.762
+Unexpected IOException with stream: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+# Created at 2020-02-28T15:16:47.762
+Unexpected IOException with stream: 
+
+
+# Created at 2020-02-28T15:16:47.763
+Unexpected IOException with stream: 	at java.lang.reflect.Method.invoke(Method.java:498)
+
+# Created at 2020-02-28T15:16:47.763
+Unexpected IOException with stream: 
+
+
+# Created at 2020-02-28T15:16:47.763
+Unexpected IOException with stream: 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+
+# Created at 2020-02-28T15:16:47.764
+Unexpected IOException with stream: 
+
+
+# Created at 2020-02-28T15:16:47.764
+Unexpected IOException with stream: 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+
+# Created at 2020-02-28T15:16:47.765
+Unexpected IOException with stream: 
+
+
+# Created at 2020-02-28T15:16:47.765
+Unexpected IOException with stream: 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+
+# Created at 2020-02-28T15:16:47.766
+Unexpected IOException with stream: 
+
+
+# Created at 2020-02-28T15:16:47.766
+Unexpected IOException with stream: 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+
+# Created at 2020-02-28T15:16:47.766
+Unexpected IOException with stream: 
+
+
+# Created at 2020-02-28T15:16:47.767
+Unexpected IOException with stream: 	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+
+# Created at 2020-02-28T15:16:47.767
+Unexpected IOException with stream: 
+
+
+# Created at 2020-02-28T15:16:47.768
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+
+# Created at 2020-02-28T15:16:47.768
+Unexpected IOException with stream: 
+
+
+# Created at 2020-02-28T15:16:47.768
+Unexpected IOException with stream: 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+
+# Created at 2020-02-28T15:16:47.769
+Unexpected IOException with stream: 
+
+
+# Created at 2020-02-28T15:16:47.769
+Unexpected IOException with stream: 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+
+# Created at 2020-02-28T15:16:47.770
+Unexpected IOException with stream: 
+
+
+# Created at 2020-02-28T15:16:47.770
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+
+# Created at 2020-02-28T15:16:47.770
+Unexpected IOException with stream: 
+
+
+# Created at 2020-02-28T15:16:47.771
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+
+# Created at 2020-02-28T15:16:47.771
+Unexpected IOException with stream: 
+
+
+# Created at 2020-02-28T15:16:47.772
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+
+# Created at 2020-02-28T15:16:47.772
+Unexpected IOException with stream: 
+
+
+# Created at 2020-02-28T15:16:47.772
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+
+# Created at 2020-02-28T15:16:47.773
+Unexpected IOException with stream: 
+
+
+# Created at 2020-02-28T15:16:47.773
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+
+# Created at 2020-02-28T15:16:47.774
+Unexpected IOException with stream: 
+
+
+# Created at 2020-02-28T15:16:47.774
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+
+# Created at 2020-02-28T15:16:47.774
+Unexpected IOException with stream: 
+
+
+# Created at 2020-02-28T15:16:47.775
+Unexpected IOException with stream: 	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
+
+# Created at 2020-02-28T15:16:47.775
+Unexpected IOException with stream: 
+
+
+# Created at 2020-02-28T15:16:47.776
+Unexpected IOException with stream: 	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)
+
+# Created at 2020-02-28T15:16:47.776
+Unexpected IOException with stream: 
+
+
+# Created at 2020-02-28T15:16:47.776
+Unexpected IOException with stream: 	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+
+# Created at 2020-02-28T15:16:47.777
+Unexpected IOException with stream: 
+
+
+# Created at 2020-02-28T15:16:47.777
+Unexpected IOException with stream: 	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
+
+# Created at 2020-02-28T15:16:47.778
+Unexpected IOException with stream: 
+
+
+# Created at 2020-02-28T15:16:47.778
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+
+# Created at 2020-02-28T15:16:47.778
+Unexpected IOException with stream: 
+
+
+# Created at 2020-02-28T15:16:47.779
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+
+# Created at 2020-02-28T15:16:47.779
+Unexpected IOException with stream: 
+
+
+# Created at 2020-02-28T15:16:47.780
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+
+# Created at 2020-02-28T15:16:47.780
+Unexpected IOException with stream: 
+
+
+# Created at 2020-02-28T15:16:47.781
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+
+# Created at 2020-02-28T15:16:47.781
+Unexpected IOException with stream: 
+
+
+# Created at 2020-02-28T15:16:47.782
+Unexpected IOException with stream: Caused by: java.net.ConnectException: Connection refused: connect
+
+# Created at 2020-02-28T15:16:47.782
+Unexpected IOException with stream: 
+
+
+# Created at 2020-02-28T15:16:47.782
+Unexpected IOException with stream: 	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+
+# Created at 2020-02-28T15:16:47.783
+Unexpected IOException with stream: 
+
+
+# Created at 2020-02-28T15:16:47.783
+Unexpected IOException with stream: 	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+
+# Created at 2020-02-28T15:16:47.783
+Unexpected IOException with stream: 
+
+
+# Created at 2020-02-28T15:16:47.784
+Unexpected IOException with stream: 	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+
+# Created at 2020-02-28T15:16:47.784
+Unexpected IOException with stream: 
+
+
+# Created at 2020-02-28T15:16:47.785
+Unexpected IOException with stream: 	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+
+# Created at 2020-02-28T15:16:47.785
+Unexpected IOException with stream: 
+
+
+# Created at 2020-02-28T15:16:47.786
+Unexpected IOException with stream: 	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+
+# Created at 2020-02-28T15:16:47.786
+Unexpected IOException with stream: 
+
+
+# Created at 2020-02-28T15:16:47.786
+Unexpected IOException with stream: 	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+
+# Created at 2020-02-28T15:16:47.787
+Unexpected IOException with stream: 
+
+
+# Created at 2020-02-28T15:16:47.787
+Unexpected IOException with stream: 	at java.net.Socket.connect(Socket.java:589)
+
+# Created at 2020-02-28T15:16:47.788
+Unexpected IOException with stream: 
+
+
+# Created at 2020-02-28T15:16:47.788
+Unexpected IOException with stream: 	at java.net.Socket.connect(Socket.java:538)
+
+# Created at 2020-02-28T15:16:47.788
+Unexpected IOException with stream: 
+
+
+# Created at 2020-02-28T15:16:47.789
+Unexpected IOException with stream: 	at sun.net.NetworkClient.doConnect(NetworkClient.java:180)
+
+# Created at 2020-02-28T15:16:47.789
+Unexpected IOException with stream: 
+
+
+# Created at 2020-02-28T15:16:47.790
+Unexpected IOException with stream: 	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463)
+
+# Created at 2020-02-28T15:16:47.790
+Unexpected IOException with stream: 
+
+
+# Created at 2020-02-28T15:16:47.790
+Unexpected IOException with stream: 	at sun.net.www.http.HttpClient$1.run(HttpClient.java:515)
+
+# Created at 2020-02-28T15:16:47.791
+Unexpected IOException with stream: 
+
+
+# Created at 2020-02-28T15:16:47.791
+Unexpected IOException with stream: 	at sun.net.www.http.HttpClient$1.run(HttpClient.java:513)
+
+# Created at 2020-02-28T15:16:47.792
+Unexpected IOException with stream: 
+
+
+# Created at 2020-02-28T15:16:47.792
+Unexpected IOException with stream: 	at java.security.AccessController.doPrivileged(Native Method)
+
+# Created at 2020-02-28T15:16:47.793
+Unexpected IOException with stream: 
+
+
+# Created at 2020-02-28T15:16:47.793
+Unexpected IOException with stream: 	at sun.net.www.http.HttpClient.privilegedOpenServer(HttpClient.java:512)
+
+# Created at 2020-02-28T15:16:47.793
+Unexpected IOException with stream: 
+
+
+# Created at 2020-02-28T15:16:47.794
+Unexpected IOException with stream: 	at sun.net.www.http.HttpClient.openServer(HttpClient.java:553)
+
+# Created at 2020-02-28T15:16:47.794
+Unexpected IOException with stream: 
+
+
+# Created at 2020-02-28T15:16:47.795
+Unexpected IOException with stream: 	at sun.net.www.http.HttpClient.parseHTTP(HttpClient.java:698)
+
+# Created at 2020-02-28T15:16:47.795
+Unexpected IOException with stream: 
+
+
+# Created at 2020-02-28T15:16:47.795
+Unexpected IOException with stream: 	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1587)
+
+# Created at 2020-02-28T15:16:47.796
+Unexpected IOException with stream: 
+
+
+# Created at 2020-02-28T15:16:47.796
+Unexpected IOException with stream: 	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1492)
+
+# Created at 2020-02-28T15:16:47.797
+Unexpected IOException with stream: 
+
+
+# Created at 2020-02-28T15:16:47.797
+Unexpected IOException with stream: 	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480)
+
+# Created at 2020-02-28T15:16:47.798
+Unexpected IOException with stream: 
+
+
+# Created at 2020-02-28T15:16:47.798
+Unexpected IOException with stream: 	at org.zaproxy.clientapi.core.ClientApi.getConnectionInputStream(Unknown Source)
+
+# Created at 2020-02-28T15:16:47.798
+Unexpected IOException with stream: 
+
+
+# Created at 2020-02-28T15:16:47.799
+Unexpected IOException with stream: 	... 32 more
+
+# Created at 2020-02-28T15:16:47.799
+Unexpected IOException with stream: 
+
+
+# Created at 2020-02-28T15:16:47.802
+Unexpected IOException: 7,1,ZAP_Selenium.ZapSecurityTest,testVulnerabilitiesLogin(ZAP_Selenium.ZapSecurityTest),null,org.zaproxy.clientapi.core.ClientApiException: java.net.ConnectException: Connection refused: connect,null,org.zaproxy.clientapi.core.ClientApiException: java.net.ConnectException: Connection refused: connect,ZapSecurityTest.testVulnerabilitiesLogin:255->spiderWithZap:198 \00BB Proxy org.za...,net.continuumsecurity.proxy.ProxyException: org.zaproxy.clientapi.core.ClientApiException: java.net.ConnectException: Connection refused: connect\000A\0009at ZAP_Selenium.ZapSecurityTest.spiderWithZap(ZapSecurityTest.java:198)\000A\0009at ZAP_Selenium.ZapSecurityTest.testVulnerabilitiesLogin(ZapSecurityTest.java:255)\000ACaused by: org.zaproxy.clientapi.core.ClientApiException: java.net.ConnectException: Connection refused: connect\000A\0009at ZAP_Selenium.ZapSecurityTest.spiderWithZap(ZapSecurityTest.java:198)\000A\0009at ZAP_Selenium.ZapSecurityTest.testVulnerabilitiesLogin(ZapSecurityTest.java:255)\000ACaused by: java.net.ConnectException: Connection refused: connect\000A\0009at ZAP_Selenium.ZapSecurityTest.spiderWithZap(ZapSecurityTest.java:198)\000A\0009at ZAP_Selenium.ZapSecurityTest.testVulnerabilitiesLogin(ZapSecurityTest.java:255)\000A
+
+
+# Created at 2020-02-28T15:16:47.803
+Unexpected IOException: 2,1,org.apache.maven.surefire.junit4.JUnit4Provider,ZAP_Selenium.ZapSecurityTest,null,null,null
+
+
